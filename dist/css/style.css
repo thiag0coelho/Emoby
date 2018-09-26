@@ -1,0 +1,44 @@
+html,
+body,
+header,
+#intro {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#intro {
+    background: url("../img/car.jpeg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.top-nav-collapse {
+    background-color: #336666;
+}
+
+@media (max-width: 768px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #336666;
+  }
+}
+@media (min-width: 800px) and (max-width: 850px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #336666;
+  }
+}
+
+#map {
+  height: 400px; 
+  position: relative; 
+  overflow: hidden;
+}
+
+.map-border {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);  
+  }
