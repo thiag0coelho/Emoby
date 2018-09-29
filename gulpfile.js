@@ -77,7 +77,7 @@ gulp.task('live-server', function() {
 });
 
 // Watch on everything
-gulp.task('mdb-go', function() {
+gulp.task('start', function() {
   gulp.start('live-server');
   gulp.watch("scss/**/*.scss", ['css-compile']);
   gulp.watch(["dist/css/*.css", "!dist/css/*.min.css"], ['css-minify']);
