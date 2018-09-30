@@ -38,7 +38,6 @@ gulp.task('js-minify', function() {
   gulp.src('./dist/js/mdb.js')
     .pipe(minify({
       ext:{
-        // src:'.js',
         min:'.min.js'
       },
       noSource: true,
