@@ -27,14 +27,9 @@
 
 
 /*
-
   jquery.easing.js
-  velocity.min.js
   chart.js
   wow.js
   scrolling-navbar.js
   waves.js
-  forms-free.js
-  enhanced-modals.js
-
 */
