@@ -177,7 +177,7 @@
         </div>
         <section id="contact">
             <div class="row">
-                <div class="col-md-8 mb-5 text-center wow fadeIn animated" data-wow-delay="0.2s">
+                <div class="col-md-12 text-center wow fadeIn animated" data-wow-delay="0.2s">
                     <label for="exampleForm2" class="light-green-text font-weight-bold">Envie sua mensagem por WhatsApp</label>
                     <input type="text" id="exampleForm2" class="form-control form-control-lg">
                     
@@ -185,26 +185,32 @@
                         <button class="btn btn-primary waves-effect waves-light">Enviar &nbsp;&nbsp;<i class="fab fa-whatsapp fa-lg"></i></button>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <ul class="text-center list-unstyled">
-                        <li class="wow fadeIn animated" data-wow-delay="0.2s">
-                            <i class="fa fa-map-marker light-green-text fa-2x"></i>
-                            <p>Florianópolis, Centro</p>
-                        </li>
-                        
-                        <li class="wow fadeIn animated mt-5 pt-2" data-wow-delay="0.3s">
-                            <i class="fa fa-phone light-green-text fa-2x"></i>
-                            <p>(48) 9 9999 9999</p>
-                        </li>
-                        
-                        <li class="wow fadeIn animated mt-5 pt-2" data-wow-delay="0.4s">
-                            <i class="fa fa-calendar light-green-text fa-2x"></i>
-                            <p>Seg - Sex, 8:00-22:00</p>
-                        </li>
-                    </ul>
-                </div>
+
+
+        </div>
+        <div class="row mt-5">
+            <div class="col-md-10">
+                <div id="map" class="map-border" ></div>
             </div>
-            <div id="map" class="map-border mt-5" ></div>
+            <div class="col-md-2">
+                <ul class="text-center list-unstyled">
+                    <li class="wow fadeIn animated mt-5 pt-2" data-wow-delay="0.2s">
+                        <i class="fa fa-map-marker light-green-text fa-2x"></i>
+                        <p>Florianópolis, Centro</p>
+                    </li>
+                    
+                    <li class="wow fadeIn animated mt-5 pt-2" data-wow-delay="0.3s">
+                        <i class="fa fa-phone light-green-text fa-2x"></i>
+                        <p>(48) 9 9999 9999</p>
+                    </li>
+                    
+                    <li class="wow fadeIn animated mt-5 pt-2" data-wow-delay="0.4s">
+                        <i class="fa fa-calendar light-green-text fa-2x"></i>
+                        <p>Seg - Sex, 8:00-22:00</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
         </section>
     </div>
 </main>
@@ -221,13 +227,12 @@
     var map;
 
     var scroll = new SmoothScroll('a[href*="#"]', {
-        topOnEmptyHash: true, // Scroll to the top of the page for links with href="#"
         clip: true,
         offset: function (anchor, toggle) {
             return 50;
         },
-        updateURL: false, // Update the URL on scroll
-        popstate: false, // Animate scrolling with the forward/backward browser buttons (requires updateURL to be true)
+        updateURL: false,
+        popstate: false,
     });
     
     function initMap() {
