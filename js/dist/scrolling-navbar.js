@@ -1,4 +1,4 @@
-($ => {
+(($) => {
 
   const SCROLLING_NAVBAR_OFFSET_TOP = 50;
 
@@ -15,5 +15,9 @@
         $('.scrolling-navbar').removeClass('top-nav-collapse');
       }
     }
+  });
+
+  $('.scrolling-navbar').click(function() {
+    $('.navbar-collapse').collapse('hide');
   });
 })(jQuery);
