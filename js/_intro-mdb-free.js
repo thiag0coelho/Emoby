@@ -27,11 +27,8 @@
 
 
 /*
-  bootstrap.min.js
   jquery-3.3.1.min.js
   jquery.easing.js
-  popper.min.js
-  chart.js
   wow.js
   scrolling-navbar.js
   waves.js
