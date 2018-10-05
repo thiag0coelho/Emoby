@@ -43,7 +43,7 @@
                 
                 <ul class="navbar-nav nav-flex-icons">
                     <li class="nav-item">
-                        <a class="nav-link waves-effect waves-light"  alt="Link do contato por WhatsApp"><i class="fab fa-whatsapp fa-2x"></i></a>
+                        <a class="nav-link waves-effect waves-light"  alt="Link do contato por WhatsApp" onclick="sendMessageWhats()"><i class="fab fa-whatsapp fa-2x"></i></a>
                     </li>
                 </ul>
             </div>
@@ -183,9 +183,9 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="md-form mb-0 wow fadeIn animated" data-wow-delay="0.2s">
-                                        <textarea type="text" id="form-contact-message" class="form-control md-textarea" rows="3"></textarea>
+                                        <textarea type="text" id="form-contact-message" class="form-control md-textarea" rows="3" maxlength="1024"></textarea>
                                         <label for="form-contact-message">Sua mensagem</label>
-                                        <a class="btn-floating btn-lg btn-primary">
+                                        <a class="btn-floating btn-lg btn-primary" onclick="sendMessageWhats()">
                                             Enviar <i class="fab fa-whatsapp"></i>
                                         </a>
                                     </div>
@@ -234,6 +234,7 @@
 <script>
     new WOW().init();
     var map;
+    var whatsappLink = "https://wa.me/5548991445676?text=";
     
     var scroll = new SmoothScroll('a[href*="#"]', {
         clip: true,
@@ -249,6 +250,12 @@
             center: {lat: -27.593500, lng: -48.558540},
             zoom: 14
         });
+    }
+
+    function sendMessageWhats(){
+        var message = document.querySelector("#form-contact-message").value;
+        if(!message) message = "Entrando em contato a partir do site Emoby";
+        window.open(`${whatsappLink}${message}`,'_blank');
     }
 </script>
 </html>
