@@ -2,21 +2,21 @@ html,
 body,
 header,
 #intro {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 #intro {
-    background: url("../img/carregamento-carro-eletroposto.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  background: url("../img/carregamento-carro-eletroposto.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .top-nav-collapse {
-    background-color: #336666;
+  background-color: #336666;
 }
 
 @media (max-width: 768px) {
@@ -41,4 +41,15 @@ header,
   -moz-border-radius: 10px;
   border-radius: 10px;
   box-shadow: 0 2px 5px #8bc34a;  
-  }
+}
+
+.contact-section .contact {
+  -webkit-border-radius: 0 .25rem .25rem 0;
+  border-radius: 0 .25rem .25rem 0;
+  background-color: #336666;
+}
+
+.md-form label {
+  top: -0.35rem;
+  color: #336666;
+}
